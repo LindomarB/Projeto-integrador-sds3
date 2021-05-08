@@ -1,0 +1,8 @@
+package com.example.dsdespesas.entities;
+
+public class Categoria {
+	private Long id;
+	private String nome;
+	
+
+}

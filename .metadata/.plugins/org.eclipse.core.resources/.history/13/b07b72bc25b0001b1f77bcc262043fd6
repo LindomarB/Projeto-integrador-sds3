@@ -1,0 +1,75 @@
+package com.example.dsdespesas.entities;
+
+import java.time.LocalDate;
+
+public class Despesa {
+	private Long id;
+	private Integer ultimaFatura;
+	private Integer faturaMedia;
+	private Integer total;
+	private LocalDate data;
+	private Categoria categoria;
+
+	public Despesa(Long id, Integer ultimaFatura, Integer faturaMedia, Integer total, LocalDate data,
+			Categoria categoria) {
+
+		this.id = id;
+		this.ultimaFatura = ultimaFatura;
+		this.faturaMedia = faturaMedia;
+		this.total = total;
+		this.data = data;
+		this.categoria = categoria;
+	}
+
+	public Despesa() {
+
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Integer getUltimaFatura() {
+		return ultimaFatura;
+	}
+
+	public void setUltimaFatura(Integer ultimaFatura) {
+		this.ultimaFatura = ultimaFatura;
+	}
+
+	public Integer getFaturaMedia() {
+		return faturaMedia;
+	}
+
+	public void setFaturaMedia(Integer faturaMedia) {
+		this.faturaMedia = faturaMedia;
+	}
+
+	public Integer getTotal() {
+		return total;
+	}
+
+	public void setTotal(Integer total) {
+		this.total = total;
+	}
+
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+}

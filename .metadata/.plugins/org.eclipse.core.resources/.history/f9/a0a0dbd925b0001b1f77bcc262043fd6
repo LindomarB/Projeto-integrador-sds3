@@ -1,0 +1,33 @@
+package com.example.dsdespesas.entities;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_despesas")
+public class Despesa {
+	private Long id;
+	private Integer ultima_fatura;
+	private Integer media_fatura;
+	private Integer total;
+	private LocalDate date;
+	private Categoria categoria;
+
+	public Despesa(Long id, Integer ultima_fatura, Integer media_fatura, Integer total, LocalDate date,
+			Categoria categoria) {
+
+		this.id = id;
+		this.ultima_fatura = ultima_fatura;
+		this.media_fatura = media_fatura;
+		this.total = total;
+		this.date = date;
+		this.categoria = categoria;
+	}
+
+	public Despesa() {
+
+	}
+
+}
