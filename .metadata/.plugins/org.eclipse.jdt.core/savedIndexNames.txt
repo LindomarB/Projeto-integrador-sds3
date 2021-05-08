@@ -55,7 +55,6 @@ INDEX VERSION 1.131+C:\Users\lindo\Desktop\ws-devsuperior\projeto-sds3\.metadata
 963762291.index
 1020575718.index
 4071701183.index
-1965174767.index
 3537100430.index
 1509796802.index
 3755965878.index
