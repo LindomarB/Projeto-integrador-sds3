@@ -1,0 +1,22 @@
+package com.example.dsdespesas.services;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.dsdespesas.dto.CategoriaDTO;
+import com.example.dsdespesas.entities.Despesa;
+import com.example.dsdespesas.repositories.DespesaRepository;
+
+public class DespesaService {
+
+	@Autowired
+	private DespesaRepository despesaRepository;
+
+	public List<CategoriaDTO> findAll() {
+		List<Despesa> resultado = despesaRepository.findAll();
+		return resultado.stream().map(x -> new DespesaDTO(x)).collect(Collectors.toList());
+				
+	}
+}
