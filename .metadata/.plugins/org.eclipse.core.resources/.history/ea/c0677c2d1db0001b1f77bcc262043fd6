@@ -1,0 +1,5 @@
+package com.example.dsdespesas.config;
+
+public class SecurityConfig {
+
+}
