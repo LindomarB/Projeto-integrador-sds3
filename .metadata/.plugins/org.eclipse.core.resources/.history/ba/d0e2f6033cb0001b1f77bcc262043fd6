@@ -25,7 +25,7 @@ public class DespesaController {
 		return ResponseEntity.ok(lista);
 	}
 	
-	@GetMapping(value="/total-por-categoria")
+	@GetMapping
 	public ResponseEntity<List<DespesaSumDTO>> totalPorCategoria(){
 		List<DespesaSumDTO> lista = service.totalPorCategoria();
 		return ResponseEntity.ok(lista);

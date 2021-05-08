@@ -22,7 +22,6 @@ public class DespesaService {
 	private DespesaRepository despesaRepository;
 	@Autowired
 	private CategoriaRepository categoriaRepository;
-	
 	@Transactional(readOnly = true)
 	public Page<DespesaDTO> findAll(Pageable pageable) {
 		categoriaRepository.findAll();

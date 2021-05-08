@@ -10,11 +10,8 @@ import com.example.dsdespesas.dto.DespesaSumDTO;
 import com.example.dsdespesas.entities.Despesa;
 @Repository
 public interface DespesaRepository extends JpaRepository<Despesa, Long> {
-	/*@Query("SELECT new com.example.dsdespesas.dto.DespesaSumDTO(obj.categoria, SUM(obj.total)) "
+	@Query("SELECT new com.example.dsdespesas.dto.DespesaSumDTO(obj.categoria, SUM(obj.total)) "
 			+ "FROM Despesa AS obj GROUP BY obj.categoria")
-	List<DespesaSumDTO> totalPorCategoria();*/
-	
-	@Query("SELECT * FROM Despesa AS obj GROUP BY obj.categoria")
 	List<DespesaSumDTO> totalPorCategoria();
 
 }
