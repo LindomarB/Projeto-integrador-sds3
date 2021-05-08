@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\lindo\Desktop\ws-devsuperior\projeto-sds3\.metadata\.plugins\org.eclipse.jdt.core
+3531887068.index
+1965174767.index
