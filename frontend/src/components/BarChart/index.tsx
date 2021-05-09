@@ -57,17 +57,7 @@ const BarChart = () => {
         },
     };
 
-    const mockData = {
-        labels: {
-            categories: ['Agua', 'luz', 'Gas', 'Combustivel', 'Mercado','Aluguel']
-        },
-        series: [
-            {
-                name: "% Despesa",
-                data: [8, 20, 10, 12, 20, 30]                   
-            }
-        ]
-    };
+
 
 
     return (
