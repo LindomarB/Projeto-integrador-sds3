@@ -982,3 +982,4 @@
 2021-05-09 15:09:41,327 [Worker-11: Launching dsdespesas - DsdespesasApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-05-09 15:09:41,393 [Worker-11: Launching dsdespesas - DsdespesasApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-05-09 15:09:41,393 [Worker-11: Launching dsdespesas - DsdespesasApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-09 15:09:41,393 [Worker-11: Launching dsdespesas - DsdespesasApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\lindo\Desktop\ws-devsuperior\projeto-sds3\backend\src\test\resources
