@@ -33,7 +33,7 @@ const BarChart = () => {
             .then((response) => {
                 const data = response.data as despesaSucesso[];
                 const myLabels = data.map(x => x.categoriaNome);
-                const mySeries = data.map(x => round(100 * x.ultima_fatura / x.media_fatura,2));
+                const mySeries = data.map(x => round(100 * x.ultima_fatura / x.media_fatura,2));//calculo realizado aqui 
                 setchartData({
                     labels: {
                         categories: myLabels
@@ -48,18 +48,7 @@ const BarChart = () => {
             })
     },[]);
 
-    ////////////////////////*
-    /* useEffect(() => {
-        axios.get(`${BASE_URL}/despesas/total-por-categoria`)
-            .then((response) => {
-                const data = response.data as DespesaSum[];
-                const myLabels = data.map(x => x.categoriaNome);
-                const mySeries = data.map(x => x.soma);
-                setChartData({ labels: myLabels, series: mySeries });
-                
-            });
-    }, []);*/
-    //////////////////
+    
         const options = {
         plotOptions: {
             bar: {
