@@ -1,0 +1,30 @@
+package com.example.dsdespesas.dto;
+
+import java.io.Serializable;
+
+import com.example.dsdespesas.entities.Categoria;
+
+
+public class DespesaSucessoDTO implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
+	private String categoriaNome;
+	private Long ultima_fatura;
+	private Long media_fatura;
+	
+	public DespesaSucessoDTO() {
+		
+	}
+
+	public DespesaSucessoDTO(Categoria categoria, Long ultima_fatura, Long media_fatura) {
+		categoriaNome = categoria.getNome();
+		this.ultima_fatura = ultima_fatura;
+		this.media_fatura = media_fatura;
+	}
+	
+
+
+	
+
+}

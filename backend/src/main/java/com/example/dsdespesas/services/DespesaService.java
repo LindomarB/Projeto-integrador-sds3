@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.dsdespesas.dto.DespesaDTO;
+import com.example.dsdespesas.dto.DespesaSucessoDTO;
 import com.example.dsdespesas.dto.DespesaSumDTO;
 import com.example.dsdespesas.entities.Despesa;
 import com.example.dsdespesas.repositories.CategoriaRepository;
@@ -34,4 +35,11 @@ public class DespesaService {
 		return despesaRepository.totalPorCategoria();
 		
 	}
+	
+	@Transactional(readOnly = true)
+	public List<DespesaSucessoDTO> sucessoPorCategoria(){
+		return despesaRepository.sucessoPorCategoria();
+	}
+	
+	
 }

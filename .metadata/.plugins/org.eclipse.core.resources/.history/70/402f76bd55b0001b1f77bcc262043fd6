@@ -1,0 +1,28 @@
+package com.example.dsdespesas.dto;
+
+import java.io.Serializable;
+
+import com.example.dsdespesas.entities.Categoria;
+
+
+public class DespesaSumDTO implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
+	private String categoriaNome;
+	private Integer ultima_fatura;
+	private Integer media_fatura;
+	
+	public DespesaSumDTO() {
+		
+	}
+
+	public DespesaSumDTO(Categoria categoria, Integer ultima_fatura, Integer media_fatura) {
+		categoriaNome = categoria.getNome();
+		this.ultima_fatura = ultima_fatura;
+		this.media_fatura = media_fatura;
+	}
+
+
+	
+}

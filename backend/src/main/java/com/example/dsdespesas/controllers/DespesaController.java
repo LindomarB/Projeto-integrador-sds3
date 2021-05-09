@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.dsdespesas.dto.DespesaDTO;
+import com.example.dsdespesas.dto.DespesaSucessoDTO;
 import com.example.dsdespesas.dto.DespesaSumDTO;
 import com.example.dsdespesas.services.DespesaService;
 
@@ -30,4 +31,12 @@ public class DespesaController {
 		List<DespesaSumDTO> lista = service.totalPorCategoria();
 		return ResponseEntity.ok(lista);
 	}
+	
+	@GetMapping(value="/sucesso-por-categoria")
+	public ResponseEntity<List<DespesaSucessoDTO>> sucessoPorCategoria(){
+		List<DespesaSucessoDTO> lista = service.sucessoPorCategoria();
+		return ResponseEntity.ok(lista);
+	}
+	
+	
 }
